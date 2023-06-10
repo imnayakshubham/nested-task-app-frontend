@@ -1,0 +1,13 @@
+.app__header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    height: 5rem;
+}
+
+.header__navigation {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: center;
+}

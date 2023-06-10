@@ -1,0 +1,21 @@
+.signup__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100% - 5rem);
+}
+
+.signup__wrapper {
+    width: 30rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    padding: 1.4rem;
+    margin: 1.4rem;
+}
+
+.signup__form__Container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
