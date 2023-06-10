@@ -11,7 +11,7 @@ export const PageNotFound = () => {
                 status="404"
                 title="404"
                 subTitle="Sorry, the page you visited does not exist."
-                extra={<Link to={"/dashboard"} type="primary">Back Home</Link>}
+                extra={<Link to={"/tasks"} type="primary">Back Home</Link>}
             />
         </div >
     )

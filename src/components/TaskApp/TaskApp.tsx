@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Task } from "./types";
 import { TaskItem } from "./TaskItem";
+import "./TaskApp.css"
 
 export const TaskApp = () => {
     const [tasks, setTasks] = useState<Task[]>(JSON.parse(localStorage.getItem("nested-task-app-tasks") ?? "[]"));

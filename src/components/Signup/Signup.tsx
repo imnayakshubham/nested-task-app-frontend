@@ -86,7 +86,7 @@ export const Signup = () => {
 
 
                     <Form.Item>
-                        <Button type="primary" htmlType="submit" loading={loading}>
+                        <Button className="submit__btn" type="primary" htmlType="submit" loading={loading}>
                             Submit
                         </Button>
                     </Form.Item>

@@ -2,12 +2,22 @@
     display: flex;
     justify-content: space-between;
     padding: 1rem 2rem;
-    height: 5rem;
+    height: 6rem;
+    align-items: center;
 }
 
 .header__navigation {
     display: flex;
     justify-content: space-between;
-    gap: 1rem;
+    gap: 0.5rem;
     align-items: center;
+}
+
+.header__logo {
+    text-decoration: none;
+    color: #212121;
+}
+
+.header__logo:hover {
+    color: rgb(0, 123, 255);
 }

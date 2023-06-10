@@ -19,14 +19,12 @@ function App() {
   return (
     <div className="App">
       <Header />
-
       <div className='main__app__container'>
-
         <Routes>
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
-          <Route path='/dashboard' element={<PrivateRoute />}>
-            <Route path='/dashboard' element={
+          <Route path='/tasks' element={<PrivateRoute />}>
+            <Route path='/tasks' element={
               <div className="app__container">
                 <TaskApp />
               </div>
@@ -38,7 +36,6 @@ function App() {
           } />
         </Routes>
       </div>
-
     </div >
   );
 }

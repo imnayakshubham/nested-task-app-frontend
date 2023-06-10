@@ -60,7 +60,7 @@ export const AuthProvider = ({ children }: AuthProviderProps): JSX.Element => {
     const userData = JSON.parse(localStorage.getItem("nested-task-app") || "{}")
     if (!!userData.token) {
       setUserInfo(userData)
-      navigateTo("/dashboard")
+      navigateTo("/tasks")
     }
   }, [navigateTo])
 
@@ -72,7 +72,7 @@ export const AuthProvider = ({ children }: AuthProviderProps): JSX.Element => {
       if (status === "Success") {
         setUserInfo(result)
         localStorage.setItem("nested-task-app", JSON.stringify(result))
-        navigateTo("/dashboard")
+        navigateTo("/tasks")
       } else {
         notification.error({
           message: message
@@ -107,7 +107,7 @@ export const AuthProvider = ({ children }: AuthProviderProps): JSX.Element => {
       if (status === "Success") {
         setUserInfo(result)
         localStorage.setItem("nested-task-app", JSON.stringify(result))
-        navigateTo("/dashboard")
+        navigateTo("/tasks")
 
       } else {
         notification.error({
